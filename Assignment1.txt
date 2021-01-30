@@ -1,0 +1,21 @@
+Assignment 1
+Discussion
+1. Discuss your initial thoughts in details on how you will design this application? 
+In our assignment first we have two types of clients which consists of new clients and returning client. As service layer, we need a login functionality and also signup/registration page and clients are required to fill out some basic information.(profile management) 
+Our application requires to calculate fuel price, show fuel price history, and fuel price prediction based on client information.
+ We need to collect and save the client information as well as fuel information. This will happen in database layer.
+
+2. Discuss what development methodology you will use and why? 
+We have though for database we will be able to use MYSQL which is free and easy to use with ASP.net or C# and for creating our website using HTML with CSS are our initial choices. 
+
+3. Provide high level design / architecture of your solution that you are proposing? 
+
+Participation Report
+We had a meeting brainstorming about the whole assignment on Monday and we all agreed about
+what technology we would probably use for each part. Then Ahmed created the shared PowerPoint
+for assignment 1. Zahra wrote the first part which was all the answers to the questions in the assignment. 
+(we came up beforehand). The architecture designed was group work. In this matter that Zahra started with some components,
+EC and Ahmed added more components to the designs and some comments regarding each technology. In conclusion, 
+the whole assignment came from our meeting and agreement regarding the total goals
+
+
