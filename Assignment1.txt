@@ -18,4 +18,3 @@ for assignment 1. Zahra wrote the first part which was all the answers to the qu
 EC and Ahmed added more components to the designs and some comments regarding each technology. In conclusion, 
 the whole assignment came from our meeting and agreement regarding the total goals
 
-Testing
