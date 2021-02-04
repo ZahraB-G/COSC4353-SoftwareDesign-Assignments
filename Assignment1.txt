@@ -1,24 +1,25 @@
 Assignment 1
 Discussion
 1. Discuss your initial thoughts in details on how you will design this application? 
-In our assignment, first we have two types of clients which consists of new clients and returning client. As service layer, we need a login functionality and also signup/registration page and clients are required to fill out some basic information. 
+
+In our assignment, first we have two types of clients which consists of new clients and returning client. As service layer, we need a login functionality and also signup/registration page and clients are required to fill out some basic information. (profile management) 
 (profile management - most likely will be the front end like a web portal where it reads from the database client table and writes if it is updating existing client or adding new clients). 
+
 Our back-end application requires to calculate fuel price, show fuel price history, and fuel price prediction based on client information which reads from the database in client table and write to fuel data table.
+
 Like mentioned, we need to collect and save the client information as well as fuel information in database layer. *Please see UML diagram of this design
 
+We discussed and came to a comprehensive agreement to use MYSQL for the database because of no cost for use and ease of use with ASP.net or C#. For the design and visual representation of our website we have came to an agreement to use HTML, CSS and Javascript. 
+
 2. Discuss what development methodology you will use and why? 
-Tentatively for database, we will be able to use MYSQL which is free and easy to use with ASP.net or C# using Visual Studio IDE and for creating our website using HTML with CSS are our initial choices with javascripts. 
+After looking into different Software Development Life Cycle (SDLC) methodologies, we will be using contemporary Agile Development methodology for its effective response to change, its effective communication with group members, rapid but incremental delivery with customer’s frequent feedbacks while promoting teamwork and collaborative performance. This will allow us to meet often while executing software requirements and adapt as changes occur. These cycles will occur as many times as necessary from the beginning to the end of the project to deliver a working software and testing its full functionalities. This is why Agile Development was the best fit for our given projects since there are incremental scenarios in each assignments (in real life would be customers’ feedbacks and changes) and frequent due dates so that we can consider each time period as Agile cycles and produce best possible program. 
 
 3. Provide high level design / architecture of your solution that you are proposing? 
 The high level design and architecture of our project is in the powerpoint slide file. 
+https://docs.google.com/presentation/d/1KCvQtgOubumHNP3IySYvi5kuW-utlMBaf65apH2gAxg/edit?usp=sharing
 
 Participation Report
-We had a meeting brainstorming about the whole assignment on Monday and we all agreed about
-what technology we would probably use for each part. Then Ahmed created the shared PowerPoint
-for assignment 1. Zahra wrote the first part which was all the answers to the questions in the assignment. 
-(we came up beforehand). The architecture designed was group work. In this matter that Zahra started with some components,
-EC and Ahmed added more components to the designs and some comments regarding each technology. In conclusion, 
-the whole assignment came from our meeting and agreement regarding the total goals.
+We had a meeting brainstorming about the whole assignment on Monday and we all agreed about what technology we would probably use for each part. Then Ahmed created the shared PowerPoint for assignment 1. EC wrote the initial brainstorming and listing requirements. Zahra wrote the initial answers to all questions based on our discussion in the group. Then EC revisioned the development methodology from the group discussion and researching course lecture and reading materials. The architecture designed was a group effort. In this matter that Zahra started with some components with UML Diagram, EC and Ahmed added more components to the designs and comments regarding each technology to develop the design. In conclusion, the whole assignment came from our meeting and agreement regarding the goals of the assignment.
 
-Also, GitHub (which is new to most of us) has been set-up by Zahra and we are starting to experiment and familiarize with its functionality for the project.
+Also, GitHub (which is new to most of us) has been set-up by Zahra and we are starting to experiment and familiarize with its functionality for the project. EC updated the synchronization of the report between google slideshow and github. 
 
