@@ -10,6 +10,7 @@ Like mentioned, we need to collect and save the client information as well as fu
 Tentatively for database, we will be able to use MYSQL which is free and easy to use with ASP.net or C# using Visual Studio IDE and for creating our website using HTML with CSS are our initial choices with javascripts. 
 
 3. Provide high level design / architecture of your solution that you are proposing? 
+The high level design and architecture of our project is in the powerpoint slide file. 
 
 Participation Report
 We had a meeting brainstorming about the whole assignment on Monday and we all agreed about
