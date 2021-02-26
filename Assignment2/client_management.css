@@ -3,13 +3,13 @@ header{
   left: 10px;
   margin-top: 15px;
   margin-left: 10px;
-  font-size:30px;
+  font-size: 1.5vw;
   color:black;
-  position: absolute;
+  position: fixed;
 }
 
 .display{
-  position: absolute;
+  position: fixed;
   display: block;
   top: 16%;
   left: 2%;
@@ -40,14 +40,14 @@ body, html{
   background-color: #555;
   color: white;
   padding: 16px 20px;
-  font-size: 20px;
+  font-size: 1.2vw;
   border: none;
   cursor: pointer;
   opacity: 0.8;
   position: fixed;
   top: 55px;
   right: 40px;
-  width: 300px;
+  width: 25vw;
 }
 
 .form-popup {
