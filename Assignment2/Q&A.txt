@@ -10,5 +10,3 @@ EC - Profile management and Profile registration
 Ahmed - Login page and Fuel Quote 
 We all have check each others work and edit them.
 4. Provide screen shots of your front end, each page? (5 points)
-
-5. IMPORTANT: list who did what within the group. TAs should be able to validate in GitHub, otherwise team members who didn't contribute will receive a ZERO.
