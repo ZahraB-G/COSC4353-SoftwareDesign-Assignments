@@ -10,4 +10,5 @@ EC - Profile management and Profile registration
 Ahmed - Login page and Fuel Quote 
 We all have check each others work and edit them.
 4. Provide screen shots of your front end, each page? (5 points)
+The screenshots are located in the link below
 https://docs.google.com/presentation/d/1KCvQtgOubumHNP3IySYvi5kuW-utlMBaf65apH2gAxg/edit?usp=sharing
