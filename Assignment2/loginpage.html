@@ -3,44 +3,42 @@
 
 <body>
 
-  <h1>Login Page</h1>
-    <form>
-      <p>Username: </p>
-      <input type = "text" placeholder="Enter username" name = "" required>
-      
-      <p>Password: </p>
-      <input type = "password" placeholder="Enter password" name = "" required><br><br>
+    <h1>Login Page</h1>
+    <form id="formId" method="post" name="loginPage">
+        <p>Username: </p>
+        <input type="text" placeholder="Enter username" name="" id="user" required>
 
-      <input type = "submit" name = "" value = "Login"><br> <br>
-      
-      <a href = "#">Forgot Username?</a> <br>
-      <a href = "#">Forgot Password?</a> 
+        <p>Password: </p>
+        <input type="password" placeholder="Enter password" name="" id="pass" required><br><br>
+
+        <!--<input type="submit" name="" value="Login">-->
+        <button onclick="location.href='client_management.html'">Login</button><br> <br>
+
+        <a href="#">Forgot Username?</a> <br>
+        <a href="#">Forgot Password?</a>
 
     </form>
 
 </body>
-
 <style>
 
- body{
-   background: url(g.png);
-   border-style:double;
-   border-color: aquamarine;
-   border-width: 10px; 
-   margin: 0;
-   padding: 0;
-   width: 350px;
-   height: 350px;
-   transform: translate(-50%,-50%);
-   top:50%;
-   left:50%;
-   position: absolute;
-   box-sizing: border-box;
-   font-family: Arial;
-   text-align: center;
-  
-  }
-
+    body {
+        background: url(g.png);
+        border-style: double;
+        border-color: aquamarine;
+        border-width: 10px;
+        margin: 0;
+        padding: 0;
+        width: 350px;
+        height: 350px;
+        transform: translate(-50%,-50%);
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        box-sizing: border-box;
+        font-family: Arial;
+        text-align: center;
+    }
 </style>
 
 </html>
