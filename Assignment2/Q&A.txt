@@ -1,14 +1,18 @@
 Answer these questions:
 1. Provide link to GitHub repository for TAs to view the code? (1 point)
 https://github.com/ZahraB-G/COSC4353-SoftwareDesign-Assignments/tree/master/Assignment2
+
 2. Discuss if your design and development methodology has changed since assignment 1 and why? (1 point)
 In our discussion we still have the same idea and methodology regarding our project. This perspective may change later on.
+
 3. List what front end technologies you are using and why. List who is responsible of doing what in your group? (2 points)
-we use HTML, Css
-Zahra - Sign up page and about page
-EC - Profile management and Profile registration 
-Ahmed - Login page and Fuel Quote 
-We all have check each others work and edit them.
-4. Provide screen shots of your front end, each page? (5 points)
+we are using HTML, Css, and JavaScript (may use JSON and basic php for data sending and receiving & API)
+    Zahra Bodaghi-Ginns - Sign up page, About page, Fuel History
+    Eunsung Cheon - Profile Management Page and Profile registration Page
+    Ahmed Al-sahli - Login page and Fuel Quote Page
+
+We all have check each other's work and worked together to fix bugs and errors.
+
+4. Provide screenshots of your front end, each page? (5 points)
 The screenshots are located in the link below
 https://docs.google.com/presentation/d/1KCvQtgOubumHNP3IySYvi5kuW-utlMBaf65apH2gAxg/edit?usp=sharing
