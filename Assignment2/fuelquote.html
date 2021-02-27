@@ -1,66 +1,86 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <style>
+        body {
+            background: url(g.png);
+            border-style: double;
+            border-color: aquamarine;
+            border-width: 10px;
+            margin: 0;
+            padding: 0;
+            width: 400px;
+            height: 700px;
+            transform: translate(-50%,-50%);
+            top: 40%;
+            left: 50%;
+            position: absolute;
+            box-sizing: border-box;
+            font-family: Arial;
+            text-align: center;
+        }
 
-<body>
+        input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    </style>
+</head>
 
-  <h1>Fuel Request</h1>
+
+<body onload="Load()">
+
+    <h1>Fuel Request</h1>
     <form>
-      <p>Gallon Request: </p>
-      <input type = "number" min = "0" step = "any" placeholder = "Input Gallons" name = "" required>
-      
-    </p>Delivery Address: </p>
-    <input type = "text" placeholder = "Input Address" name = "" required>
+        <p>Gallon Request: </p>
+        <input type="number" id=gallon min="0" step="any" placeholder="Input Gallons" name="" required>
 
-    </p>Delivery Date: </p>
-    <input type = "date" placeholder = "Input Date" name = "" required>
+        <p>Delivery Address: </p>
+        <p id="address1" name="address1" rows="2" cols="20"> </p>
+        <p id="address2" name="address2" rows="2" cols="20"> </p>
+        <p id="city" name="city" rows="2" cols="20"> </p>
+        <p id="state" name="state" rows="2" cols="20"> </p>
+        <p id="zip" name="zip" rows="2" cols="20"> </p>
 
-    </p>Suggested Price Per Gallon: </p>
-    <input type = "number" min = "0" step = "any" placeholder="Input Price" name = "" required>
+        <p>Delivery Date: </p>
+        <input type="date" id=dated placeholder ="Input Date" name="" required>
 
-    </p>Total Amount: </p>
-    <input type = "number" min = "0" step = "any"placeholder="Input Gallons" name = "" required>
-    
-    <br><br><br>
+        <p>Suggested Price Per Gallon: </p>
+        <p id="PPG" name="PPG" rows="2" cols="20">$2.25</p>
+        <!-- <input type="number" min="0" step="any" placeholder="Input Price" name="" required>-->
 
-      <input type = "submit" name = "" value = "Request"><br> <br>
-      
-    
+        <input type="button" name="" value="Update" onclick="update_price()"><br> 
+        <p>Total Amount: </p>
+        <p id="Total" name="Total" rows="2" cols="20"></p>
+
+        <!--  <input type="number" min="0" step="any" placeholder="Amount Due" name="" required>-->
+
+        <br><br><br>
+
+        <input type="submit" name="" value="Request" onclick="update()"><br> <br>
+
     </form>
 
+    <script>
+         function Load(){
+            if(sessionStorage.getItem("address1") == null)
+                return;
+            document.getElementById("address1").innerHTML = sessionStorage.getItem("address1") + ", ";
+            document.getElementById("address2").innerHTML = sessionStorage.getItem("address2")+ ", ";
+            document.getElementById("city").innerHTML = sessionStorage.getItem("city")+ ", ";
+            document.getElementById("state").innerHTML = sessionStorage.getItem("state")+ " ";
+            document.getElementById("zip").innerHTML = sessionStorage.getItem("zip");
+        }
+        
+        function update_price()
+        {
+            var cost = document.getElementById("gallon").value * 2.25;
+            document.getElementById("Total").innerHTML = "$ " + cost.toString();
+        }
+
+    </script>
 </body>
 
-<style>
-
-
-
- body{
-   background: url(g.png);
-   border-style:double;
-   border-color: aquamarine;
-   border-width: 10px; 
-   margin: 0;
-   padding: 0;
-   width: 400px;
-   height: 575px;
-   transform: translate(-50%,-50%);
-   top:40%;
-   left:50%;
-   position: absolute;
-   box-sizing: border-box;
-   font-family: Arial;
-   text-align: center;
-   
-  }
-  input::-webkit-outer-spin-button, input::-webkit-inner-spin-button 
-{
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-
-
-
-</style>
 
 </html>
 
