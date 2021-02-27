@@ -49,16 +49,28 @@ body, html{
   right: 40px;
   width: 25vw;
 }
-
+#quote {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    font-size: 1.2vw;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    top: 150px;
+    right: 40px;
+    width: 25vw;
+}
 .form-popup {
-  display: none;
-  background: url(g.png);
-  position: absolute;
-  top: 0; 
-  bottom: 0; 
-  width: 100%;
-  padding: 0;
-  margin: 0;
+    display: none;
+    background: url(g.png);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 .form-container {
