@@ -1,0 +1,35 @@
+﻿body {
+    /* display: flex;
+    background-image: url("g.png");
+    background-position: center;
+    */
+    background: url(g.png);
+    border-style: double;
+    border-color: aquamarine;
+    border-width: 10px;
+    margin: 0;
+    padding: 0;
+    width: 350px;
+    height: 350px;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    box-sizing: border-box;
+    font-family: Arial;
+    text-align: center;
+}
+form {
+    //border: 3px solid black;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    margin-top:250px;
+    margin-left:700px;
+    padding:50px;
+
+    width:250px;
+    height:250px;
+ 
+
+}
