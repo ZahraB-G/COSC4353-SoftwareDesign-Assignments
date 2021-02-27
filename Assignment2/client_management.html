@@ -10,12 +10,12 @@
   <title>Client Profile Management</title>
 </head>
 
-<header  >
-  <h1>Client Profile Management</h1>
-</header>
 
-<body onload = showAlert()>
-  
+<body onload=showAlert()>
+
+    <header>
+        <h1>Client Profile Management</h1>
+    </header>  
   
     <div class="display">
 
@@ -41,25 +41,29 @@
       <p id="zi" name="zi" rows="2" cols="20"> </p>
     </div>
 
+    <form action="fuelquote.html">
+        <input id="quote" type="submit" value="FUEL QUOTE REQUEST" />
+    </form>
+  
   <button class="open-button" onclick="openForm()">Update Profile Information</button>
   <div class="form-popup" id="clientForm">
     <div class="form-container">
       <h1>Client Profile Registration</h1>
       
       <label for="text"><b>First Name</b></label>
-      <input type="text" placeholder="Enter First Name" id ="firstName" name="firstName" maxlength="50"  required>
-      
+      <input type="text" placeholder="Enter First Name" id="firstName" name="firstName" maxlength="50" required>
+
       <label for="text"><b>Last Name</b></label>
-      <input type="text" placeholder="Enter Last Name" id ="lastName"name="lastName" maxlength="50"  required>
+      <input type="text" placeholder="Enter Last Name" id="lastName" name="lastName" maxlength="50" required>
 
       <label for="text"><b>Address1</b></label>
-      <input type="text" placeholder="Enter Address" id ="address1" name="address1" maxlength="100"  required>
-      
+      <input type="text" placeholder="Enter Address" id="address1" name="address1" maxlength="100" required>
+
       <label for="text"><b>Address2<i> - OPTIONAL</i></b></label>
-      <input type="text" placeholder="Apartment, Floor, Suite, Bldg #" id ="address2" name="address2" maxlength="100"  >
+      <input type="text" placeholder="Apartment, Floor, Suite, Bldg #" id="address2" name="address2" maxlength="100">
 
       <label for="text"><b>City</b></label>
-      <input type="text" placeholder="City" id ="city" name="city" maxlength="100"  required>
+      <input type="text" placeholder="City" id="city" name="city" maxlength="100" required>
 
       <label for="drop-down"><b>State</b></label>
       <br>
@@ -119,7 +123,7 @@
       <br><br>
 
       <label for="text"><b>Zip Code</b></label>
-      <input type="text" placeholder="5 digit or 9 digit ZIP Code" id ="zip" name="zip" minlength="5" maxlength="9"  required>
+      <input type="text" placeholder="5 digit or 9 digit ZIP Code" id="zip" name="zip" minlength="5" maxlength="9" required>
 
       <button type="submit" class="btn" onclick="update()">Save</button>
       <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
@@ -127,6 +131,19 @@
   </div>
 
   <script>
+  
+   class Client
+  {
+      constructor(name, address) {
+      this.firstName = name.FirstName;
+      this.lastnNme = name.LastName;
+      this.address1 = address.address1;
+      this.address2 = address.address2;
+      this.state = address.state;
+      this.city = address.city;
+      this.zip = address.zip;
+      }
+  }
   
   function openForm() {
     document.getElementById("clientForm").style.display = "block";
@@ -137,15 +154,42 @@
   }
 
   function update() {
-    check_text_input("fName", "firstName");
-    check_text_input("lName", "lastName");
-    check_text_input("ci", "city");
-    check_text_input("st", "state");
-    document.getElementById("add1").innerHTML = document.getElementById("address1").value;
-    document.getElementById("add2").innerHTML = document.getElementById("address2").value;
-    document.getElementById("zi").innerHTML = document.getElementById("zip").value;
-    document.getElementById("clientForm").style.display = "none";
-  }
+    
+        var name = {
+        firstName:  document.getElementById("firstName").value,
+        lastName: document.getElementById("lastName").value
+        };
+
+        var address = {
+        address1:  document.getElementById("address1").value,
+        address2: document.getElementById("address2").value,
+        state: document.getElementById("state").value,
+        city: document.getElementById("city").value,
+        zip: document.getElementById("zip").value
+        };
+
+        let client = new Client(name,address);
+
+        check_text_input("fName", "firstName");
+        check_text_input("lName", "lastName");
+        check_text_input("ci", "city");
+        check_text_input("st", "state");
+
+
+        sessionStorage.setItem("address1", client.address1);
+       sessionStorage.setItem("address2", client.address2);
+        sessionStorage.setItem("city", client.city);
+        sessionStorage.setItem("state", client.state);
+        sessionStorage.setItem("zip", client.zip);
+
+
+        document.getElementById("add1").innerHTML = client.address1;
+        document.getElementById("add2").innerHTML = client.address2;
+        document.getElementById("zi").innerHTML = client.zip;
+
+
+        document.getElementById("clientForm").style.display = "none";
+   }
 
   function check_text_input(s1, s2)
   {
@@ -164,7 +208,10 @@
 
   function showAlert() {
       if(document.getElementById("fName").value == undefined)
-          alert ("Welcome! Please Register for your Account");
+      {
+        alert ("Welcome! Please Register for your Account");
+        document.getElementById("clientForm").style.display = "block";
+      }
       else
           alert ("Welcome!" + document.getElementById("fName").value );
   }
