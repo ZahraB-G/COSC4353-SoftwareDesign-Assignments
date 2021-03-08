@@ -1,14 +1,24 @@
-﻿using System;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 /// <summary>
-/// Summary description for Class1
+/// userCredentials class contains username, password, user_index
 /// </summary>
-public class UserCredentials
+public class CompanyPagesFuel.Models
 {
 	public UserCredentials()
 	{
-		//
-		// TODO: Add constructor logic here
-		//
+		public int user_index{get;set;}
+		
+        [Required]
+        [StringLength(15, MinimumLength = 5)]
+        [RegularExpression(@"^[A-Z]+[a-zA-Z""'\s-]*$")]
+        public string username{get; set;}
+        
+        
+        [Required]
+        [StringLength(15, MinimumLength = 5)]
+        public string password{get; set;}
 	}
 }
