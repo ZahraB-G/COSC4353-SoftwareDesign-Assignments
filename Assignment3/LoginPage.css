@@ -1,0 +1,17 @@
+﻿body {
+    background: url(g.png);
+    border-style: double;
+    border-color: aquamarine;
+    border-width: 10px;
+    margin: 0;
+    padding: 0;
+    width: 350px;
+    height: 350px;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    box-sizing: border-box;
+    font-family: Arial;
+    text-align: center;
+}

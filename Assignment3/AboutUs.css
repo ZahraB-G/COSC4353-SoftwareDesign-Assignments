@@ -1,0 +1,37 @@
+﻿body {
+    /*font-family: Arial;
+    margin: 250px;
+    background-image: url("g.png");
+    background-repeat: no-repeat;
+    background-position:center;*/
+    background: url(g.png);
+    border-style: double;
+    border-color: aquamarine;
+    border-width: 10px;
+    margin: 0;
+    padding: 0;
+    width: 350px;
+    height: 350px;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    box-sizing: border-box;
+    font-family: Arial;
+    text-align: center;
+}
+header
+{
+   font: 36px;
+   color:blue;
+}
+form
+{
+    font-size:bold 16px;
+}
+input{
+    align-content:center;
+    background-color:lightsteelblue;
+    width:300px;
+    height:40px;
+}

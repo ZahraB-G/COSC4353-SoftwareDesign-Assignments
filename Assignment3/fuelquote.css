@@ -1,0 +1,22 @@
+﻿body {
+    background: url(g.png);
+    border-style: double;
+    border-color: aquamarine;
+    border-width: 10px;
+    margin: 0;
+    padding: 0;
+    width: 400px;
+    height: 700px;
+    transform: translate(-50%,-50%);
+    top: 40%;
+    left: 50%;
+    position: absolute;
+    box-sizing: border-box;
+    font-family: Arial;
+    text-align: center;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
